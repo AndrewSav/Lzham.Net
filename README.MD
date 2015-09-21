@@ -12,7 +12,7 @@ Native Lzham provides three ways of operation:
   - All-in-one (you provide block of memory to compress and it calls init/deinit for you)
   - Zlib style
 
-Zlib style is not exposed by this wrapper. All-in-one is exposed via static methods on `Lzham` class:
+**Zlib style** is not exposed by this wrapper. **All-in-one** is exposed via static methods on `Lzham` class:
 
 ```
 public static DecompressStatus DecompressMemory(
@@ -32,7 +32,7 @@ Here you provide compression/decompression parameter, a byte array where lzham r
 It returns adler32 checksum of the completed operation. For better description of compression/decompression parameters and status codes 
 please refer to original [lzham documentation](https://github.com/richgel999/lzham_codec/blob/master/include/lzham.h).
 
-Block-by-block mode is abstracted via `LzhamStream` class to provide more natural feeling .net way. 
+**Block-by-block** mode is abstracted via `LzhamStream` class to provide more natural feeling .net way. 
 Please see  https://github.com/AndrewSav/Lzham.Net/blob/master/LzhamTest/Program.cs for an example on usage.
 
 ## Test project
