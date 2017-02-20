@@ -21,7 +21,7 @@ public static DecompressStatus DecompressMemory(
   byte[] outBuf, ref int outBufSize, int outBufOffset, 
   ref uint adler32)
 
-public static CompressStatus ÑompressMemory(
+public static CompressStatus CompressMemory(
   CompressionParameters parameters, 
   byte[] inBuf, int inBufSize, int inBufOffset, 
   byte[] outBuf, ref int outBufSize, int outBufOffset, 
